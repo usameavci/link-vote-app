@@ -1,0 +1,14 @@
+.page-index-block {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+.page-index-block:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.page-index .link-sort {
+  margin: 0 0.5rem 1rem;
+}

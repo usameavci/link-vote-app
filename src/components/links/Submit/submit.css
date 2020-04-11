@@ -1,0 +1,28 @@
+.link-submit {
+    display: grid;
+    padding: 0.5rem;
+    grid-gap: 1rem;
+    border-radius: 4px;
+    align-items: center;
+    grid-auto-flow: column;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    justify-content: flex-start;
+}
+
+.link-submit-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    font-size: 2rem;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+    border: 1px solid #c1c1c1;
+}
+
+.link-submit-title {
+    font-weight: 700;
+    font-size: 1.75rem;
+}

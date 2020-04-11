@@ -1,0 +1,56 @@
+.link-sort {
+  min-width: 180px;
+  position: relative;
+  display: inline-block;
+}
+
+.link-sort.link-sort--opened .link-sort-label {
+  border-radius: 4px 4px 0 0;
+}
+
+.link-sort-label {
+  display: flex;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  border: 1px solid #dbd6d6;
+  justify-content: space-between;
+}
+
+.link-sort-label-inner,
+.link-sort-label-icon {
+  padding: 0.5rem;
+}
+
+.link-sort-label-icon {
+  border-left: 1px solid #dbd6d6;
+}
+
+.link-sort-options {
+  left: 0;
+  top: 100%;
+  z-index: 1;
+  width: 100%;
+  display: none;
+  margin-top: -1px;
+  position: absolute;
+  border: 1px solid #a2a2a2;
+}
+
+.link-sort-options .link-sort-option {
+  padding: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #e8e8e8;
+  border-bottom: 1px solid #a2a2a2;
+}
+
+.link-sort-options .link-sort-option:hover {
+  cursor: pointer;
+  background-color: #d8d8d8;
+}
+
+.link-sort-options .link-sort-option:last-child {
+  border-bottom: 0;
+}

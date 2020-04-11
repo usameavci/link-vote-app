@@ -1,0 +1,21 @@
+.common-pagination {
+  grid-gap: 0.5rem;
+  display: inline-grid;
+  grid-auto-flow: column;
+}
+
+.common-pagination-page {
+  padding: 0.5rem;
+  cursor: pointer;
+  min-width: 38px;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.common-pagination-page:hover {
+  border-color: #ddd;
+}
+
+.common-pagination-page.common-pagination-page--active {
+  border-color: #000;
+}

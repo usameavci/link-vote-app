@@ -1,0 +1,11 @@
+.common-header-text span:nth-child(1) {
+  font-weight: 700;
+}
+
+.common-header-text span:nth-child(2) {
+  font-weight: 300;
+}
+
+.common-header-text span:nth-child(3) {
+  font-weight: 400;
+}

@@ -1,0 +1,85 @@
+.link-item {
+  display: grid;
+  padding: 0.5rem;
+  grid-gap: 1rem;
+  position: relative;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid transparent;
+  grid-template-columns: auto 1fr;
+}
+
+.link-item-vote {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ececec;
+  border: 1px solid #c1c1c1;
+}
+
+.link-item-vote .vote-point {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.link-item-vote .vote-label {
+  font-size: 0.75rem;
+}
+
+.link-item-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.link-item-url {
+  color: #7f7f7f;
+  margin-top: 0.25rem;
+}
+
+.link-item-actions {
+  display: flex;
+  margin-top: 1rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.link-item-actions .link-item-action {
+  border: 0;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  background-color: #f5f5f5;
+}
+
+.link-item-actions .link-item-action:hover {
+  background-color: #eee;
+}
+
+.link-item .link-item-remove {
+  border: 0;
+  color: #fff;
+  top: -0.5rem;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  right: -0.5rem;
+  visibility: hidden;
+  border-radius: 50%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: #a10007;
+}
+
+.link-item:hover {
+  border-color: #eaeaea;
+  background-color: #f7f7f7;
+}
+
+.link-item:hover .link-item-remove {
+  visibility: visible;
+}
