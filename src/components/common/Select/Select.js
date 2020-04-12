@@ -1,7 +1,7 @@
 import map from "lodash/map";
 import get from "lodash/get";
 import head from "lodash/head";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./select.css";
 
@@ -20,6 +20,10 @@ const Select = (props) => {
       props.onChange(option);
     }
   };
+
+  useEffect(() => {
+    setSelectedOption(props.value || defaultSelectedOption);
+  }, [props.value, defaultSelectedOption]);
 
   return (
     <div data-testid="common-select" className={"common-select" + (opened ? " common-select--opened" : "")}>

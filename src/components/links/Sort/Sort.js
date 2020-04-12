@@ -1,5 +1,5 @@
 import find from "lodash/find";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { withRouter } from "react-router-dom";
 
 import Url from "../../../utils/Url";
@@ -31,6 +31,10 @@ const Sort = ({ history, location }) => {
 
   const defaultSelectedOption = find(options, { sort, order });
   const [selectedOption, setSelectedOption] = useState(defaultSelectedOption);
+
+  useEffect(() => {
+    setSelectedOption(find(options, { sort, order }));
+  }, [options, sort, order]);
 
   const handleChange = (option) => {
     setSelectedOption(option);
