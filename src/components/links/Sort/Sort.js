@@ -47,7 +47,7 @@ const Sort = ({ history, location }) => {
   };
 
   return (
-    <div className="link-sort">
+    <div data-testid="link-sort" className="link-sort">
       <CommonSelect value={selectedOption} options={options} onChange={handleChange} />
     </div>
   );

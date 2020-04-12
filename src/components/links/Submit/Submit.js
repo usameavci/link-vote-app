@@ -5,7 +5,7 @@ import "./submit.css";
 
 const Submit = () => {
   return (
-    <Link className="link-submit" to="/submit">
+    <Link data-testid="link-submit" className="link-submit" to="/submit">
       <div className="link-submit-icon">
         <i className="fa fa-plus" />
       </div>

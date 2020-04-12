@@ -6,11 +6,11 @@ import "./list.css";
 
 const List = (props) => {
   return (
-    <div className="link-list">
+    <div data-testid="link-list" className="link-list">
       {props.items && props.items.length ? (
         props.items.map((link) => <LinkItem link={link} key={link.id} />)
       ) : (
-        <div>There is a no links here</div>
+        <div data-testid="link-list-empty">There is a no links here</div>
       )}
     </div>
   );

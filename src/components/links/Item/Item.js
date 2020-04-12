@@ -26,8 +26,8 @@ const Item = (props) => {
   };
 
   return (
-    <div className="link-item">
-      <button className="link-item-remove" onClick={handleDeleteLink}>
+    <div data-testid="link-item" className="link-item">
+      <button data-testid="link-item-remove" className="link-item-remove" onClick={handleDeleteLink}>
         <i className="fa fa-times" />
       </button>
       <div className="link-item-vote">
@@ -38,10 +38,18 @@ const Item = (props) => {
         <div className="link-item-title">{props.link.title}</div>
         <div className="link-item-url">({props.link.url})</div>
         <div className="link-item-actions">
-          <button className="link-item-action" onClick={() => voteLink(props.link, "up")}>
+          <button
+            data-testid="link-item-up-vote"
+            className="link-item-action"
+            onClick={() => voteLink(props.link, "up")}
+          >
             <i className="fa fa-arrow-up" /> Up Vote
           </button>
-          <button className="link-item-action" onClick={() => voteLink(props.link, "down")}>
+          <button
+            data-testid="link-item-down-vote"
+            className="link-item-action"
+            onClick={() => voteLink(props.link, "down")}
+          >
             <i className="fa fa-arrow-down" /> Down Vote
           </button>
         </div>

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Submit page component tests matches snapshots 1`] = `
+<div
+  className="page-submit"
+  data-testid="page-submit"
+>
+  <a
+    className="page-submit-back"
+    href="/"
+    onClick={[Function]}
+  >
+    <i
+      className="fa fa-arrow-left"
+    />
+    <span>
+      Return to list
+    </span>
+  </a>
+  <h1
+    className="page-submit-title"
+  >
+    Add New Link
+  </h1>
+  <form
+    className="page-submit-form"
+    data-testid="submit-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="page-submit-group"
+    >
+      <label
+        className="page-submit-label"
+        htmlFor="title"
+      >
+        Link Name:
+      </label>
+      <input
+        className="page-submit-input"
+        data-testid="submit-form-input-title"
+        onChange={[Function]}
+        placeholder="e.g. Alphabet"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="page-submit-group"
+    >
+      <label
+        className="page-submit-label"
+        htmlFor="title"
+      >
+        Link URL:
+      </label>
+      <input
+        className="page-submit-input"
+        data-testid="submit-form-input-url"
+        onChange={[Function]}
+        placeholder="e.g. http://abc.xyz"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="text-right"
+    >
+      <button
+        className="page-submit-button"
+        data-testid="submit-form-button-submit"
+        type="submit"
+      >
+        ADD
+      </button>
+    </div>
+  </form>
+</div>
+`;

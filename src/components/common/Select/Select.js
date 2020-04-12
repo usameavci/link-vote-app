@@ -22,7 +22,7 @@ const Select = (props) => {
   };
 
   return (
-    <div className={"common-select" + (opened ? " common-select--opened" : "")}>
+    <div data-testid="common-select" className={"common-select" + (opened ? " common-select--opened" : "")}>
       <div className="common-select-label" onClick={() => setOpened(!opened)}>
         <span className="common-select-label-inner">{selectedOption.label}</span>
 

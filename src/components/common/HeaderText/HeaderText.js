@@ -4,7 +4,7 @@ import "./header-text.css";
 
 const HeaderText = () => {
   return (
-    <div className="common-header-text">
+    <div data-testid="common-header-text" className="common-header-text">
       <span>Link</span>
       <span>VOTE</span>
       <span>Challenge</span>

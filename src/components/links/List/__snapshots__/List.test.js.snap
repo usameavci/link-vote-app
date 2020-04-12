@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index page component tests matches snapshots 1`] = `
+<div
+  className="link-list"
+  data-testid="link-list"
+>
+  <div
+    data-testid="link-list-empty"
+  >
+    There is a no links here
+  </div>
+</div>
+`;

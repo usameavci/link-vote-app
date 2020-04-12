@@ -7,7 +7,7 @@ import "./logo.css";
 
 const Logo = () => {
   return (
-    <Link to="/">
+    <Link data-testid="common-logo" to="/">
       <img src={LogoUrl} alt="Hepsiburada" className="common-logo" />
     </Link>
   );

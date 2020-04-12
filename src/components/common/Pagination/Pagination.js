@@ -75,9 +75,10 @@ const Pagination = (props) => {
   useEffect(handleRangeChange, [props]);
 
   return (
-    <div className="common-pagination">
+    <div className="common-pagination" data-testid="common-pagination">
       {map(range, (page) => (
         <div
+          data-testid="common-pagination-link"
           className={classNames("common-pagination-page", {
             "common-pagination-page--active": page.active,
           })}

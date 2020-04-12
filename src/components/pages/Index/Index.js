@@ -13,7 +13,7 @@ const PageIndex = () => {
   const { links } = useContext(LinkContext);
 
   return (
-    <div className="page-index">
+    <div data-testid="page-index" className="page-index">
       <div className="page-index-block">
         <LinkSubmit />
       </div>

@@ -30,7 +30,7 @@ const PageSubmit = () => {
   };
 
   return (
-    <div className="page-submit">
+    <div data-testid="page-submit" className="page-submit">
       <Link to="/" className="page-submit-back">
         <i className="fa fa-arrow-left" />
         <span>Return to list</span>
@@ -38,12 +38,13 @@ const PageSubmit = () => {
 
       <h1 className="page-submit-title">Add New Link</h1>
 
-      <form className="page-submit-form" onSubmit={handleFormSubmit}>
+      <form data-testid="submit-form" className="page-submit-form" onSubmit={handleFormSubmit}>
         <div className="page-submit-group">
           <label className="page-submit-label" htmlFor="title">
             Link Name:
           </label>
           <input
+            data-testid="submit-form-input-title"
             type="text"
             value={title}
             placeholder="e.g. Alphabet"
@@ -57,6 +58,7 @@ const PageSubmit = () => {
             Link URL:
           </label>
           <input
+            data-testid="submit-form-input-url"
             type="text"
             value={url}
             className="page-submit-input"
@@ -66,7 +68,7 @@ const PageSubmit = () => {
         </div>
 
         <div className="text-right">
-          <button type="submit" className="page-submit-button">
+          <button data-testid="submit-form-button-submit" type="submit" className="page-submit-button">
             ADD
           </button>
         </div>

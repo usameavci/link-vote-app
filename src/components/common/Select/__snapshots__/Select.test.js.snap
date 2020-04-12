@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component tests matches snapshots 1`] = `
+<div
+  className="common-select"
+  data-testid="common-select"
+>
+  <div
+    className="common-select-label"
+    onClick={[Function]}
+  >
+    <span
+      className="common-select-label-inner"
+    >
+      Creation Date
+    </span>
+    <span
+      className="common-select-label-icon"
+    >
+      <i
+        className="fa fa-caret-down"
+      />
+    </span>
+  </div>
+  <div
+    className="common-select-options"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      className="common-select-option"
+      onClick={[Function]}
+    >
+      Creation Date
+    </div>
+    <div
+      className="common-select-option"
+      onClick={[Function]}
+    >
+      Most Voted (Z -&gt; A)
+    </div>
+    <div
+      className="common-select-option"
+      onClick={[Function]}
+    >
+      Less Voted (A -&gt; Z)
+    </div>
+  </div>
+</div>
+`;

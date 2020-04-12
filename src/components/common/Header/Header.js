@@ -7,7 +7,7 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <div className="common-header">
+    <div data-testid="common-header" className="common-header">
       <CommonLogo />
       <CommonHeaderText />
     </div>

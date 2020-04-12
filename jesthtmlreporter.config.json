@@ -1,0 +1,5 @@
+{
+  "pageTitle": "Unit Test Report",
+  "outputPath": "./coverage/unit-test-report.html",
+  "includeFailureMsg": true
+}

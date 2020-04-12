@@ -19,7 +19,7 @@ const Pagination = ({ pagination, history, location }) => {
   };
 
   return (
-    <div className="link-pagination">
+    <div data-testid="link-pagination" className="link-pagination">
       {pagination && pagination.count > 1 ? (
         <CommonPagination
           total={pagination.total}

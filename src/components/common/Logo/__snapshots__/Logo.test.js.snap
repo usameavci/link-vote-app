@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo component tests matches snapshots 1`] = `
+<a
+  data-testid="common-logo"
+  href="/"
+  onClick={[Function]}
+>
+  <img
+    alt="Hepsiburada"
+    className="common-logo"
+    src="logo.jpg"
+  />
+</a>
+`;

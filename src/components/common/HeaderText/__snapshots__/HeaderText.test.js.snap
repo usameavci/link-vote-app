@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderText component tests matches snapshots 1`] = `
+<div
+  className="common-header-text"
+  data-testid="common-header-text"
+>
+  <span>
+    Link
+  </span>
+  <span>
+    VOTE
+  </span>
+  <span>
+    Challenge
+  </span>
+</div>
+`;

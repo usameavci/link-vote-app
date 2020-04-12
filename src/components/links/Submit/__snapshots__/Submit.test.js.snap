@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Links sort component tests matches snapshots 1`] = `
+<a
+  className="link-submit"
+  data-testid="link-submit"
+  href="/submit"
+  onClick={[Function]}
+>
+  <div
+    className="link-submit-icon"
+  >
+    <i
+      className="fa fa-plus"
+    />
+  </div>
+  <div
+    className="link-submit-title"
+  >
+    SUBMİT A LİNK
+  </div>
+</a>
+`;

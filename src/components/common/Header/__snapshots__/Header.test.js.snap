@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component tests matches snapshots 1`] = `
+<div
+  className="common-header"
+  data-testid="common-header"
+>
+  <a
+    data-testid="common-logo"
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="Hepsiburada"
+      className="common-logo"
+      src="logo.jpg"
+    />
+  </a>
+  <div
+    className="common-header-text"
+    data-testid="common-header-text"
+  >
+    <span>
+      Link
+    </span>
+    <span>
+      VOTE
+    </span>
+    <span>
+      Challenge
+    </span>
+  </div>
+</div>
+`;

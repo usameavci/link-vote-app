@@ -11,7 +11,7 @@ import "./app.css";
 
 const App = () => {
   return (
-    <div className="app">
+    <div data-testid="app" className="app">
       <Router>
         <LinkContextProvider>
           <CommonHeader />

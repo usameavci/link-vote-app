@@ -56,7 +56,7 @@ class LinkService extends Service {
       },
     ];
 
-    each(links, link => table.insert(link));
+    each(links, link => this.create(link));
   }
 }
 
