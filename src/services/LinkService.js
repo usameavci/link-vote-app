@@ -1,4 +1,5 @@
-import each from "lodash/each";
+import map from "lodash/map";
+import waterfall from "async/waterfall";
 
 import Service from "./Service";
 
@@ -7,7 +8,7 @@ class LinkService extends Service {
     super("links");
   }
 
-  _createTable(table) {
+  insertExampleData() {
     const links = [
       {
         title: "Google",
@@ -56,7 +57,8 @@ class LinkService extends Service {
       },
     ];
 
-    each(links, link => this.create(link));
+    const stack = map(links, (link) => (cb) => this.create(link).then(() => setTimeout(cb, 100)));
+    return new Promise((resolve) => waterfall(stack, (err, results) => resolve()));
   }
 }
 

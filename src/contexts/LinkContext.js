@@ -65,6 +65,14 @@ const LinkContextProvider = ({ children, location }) => {
     return true;
   };
 
+  const loadExampleData = async () => {
+    await service.insertExampleData();
+
+    updateLinksState();
+
+    return true;
+  };
+
   return (
     <LinkContext.Provider
       value={{
@@ -72,6 +80,7 @@ const LinkContextProvider = ({ children, location }) => {
         addLink,
         voteLink,
         deleteLink,
+        loadExampleData,
       }}
     >
       {children}

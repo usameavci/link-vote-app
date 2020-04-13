@@ -8,7 +8,20 @@ exports[`Index page component tests matches snapshots 1`] = `
   <div
     data-testid="link-list-empty"
   >
-    There is a no links here
+    <div
+      className="text-center"
+    >
+      There is a no links here
+    </div>
+    <div
+      className="text-center"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Load Example Data
+      </button>
+    </div>
   </div>
 </div>
 `;

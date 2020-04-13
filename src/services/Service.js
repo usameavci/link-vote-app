@@ -7,14 +7,8 @@ import limit from "json-function/dist/package/limit";
 
 class Service {
   constructor(tableName) {
-    const hasTable = !!localStorage.getItem(tableName);
-
     this._tableName = tableName;
     this._table = new LocalDB(this._tableName);
-
-    if (!hasTable) {
-      this._createTable(this._table);
-    }
   }
 
   async list(query = {}, { sort = ["createdAt"], order = ["desc"] }, { page = 1, perPage = 5 }) {
@@ -33,12 +27,18 @@ class Service {
   async create(payload) {
     if (!payload) return false;
 
-    return this._table.insert({ ...payload, createdAt: new Date(), updatedAt: new Date() });
+    const now = new Date();
+    const createdAt = now.getTime();
+    const updatedAt = now.getTime();
+
+    return this._table.insert({ ...payload, createdAt, updatedAt });
   }
 
   async update(query, payload) {
     if (!query || !payload) return false;
-    const updatedAt = new Date();
+
+    const now = new Date();
+    const updatedAt = now.getTime();
 
     this._table.update(query, { ...payload, updatedAt });
 
